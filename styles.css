@@ -1,0 +1,300 @@
+
+h2{
+    color: brown;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 183, 255);
+}
+p{
+    font-family: Madimi One", sans-serif;
+}   
+header{
+    display:flex;
+    background-color: rgb(53, 52, 52);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+header nav ul{
+    display: flex;
+    gap: 1em;
+}
+ol,
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header nav ul li a{
+    color: rgb(255, 255, 255);
+}
+header a i{
+    font-size: 3em;
+    padding: 0.5em;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.seccion-1{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2em;
+    flex-wrap: wrap;
+}
+.seccion-2 img{
+    width: 100%;
+    background-color: aqua;
+    
+}
+footer{
+    width: 100%;
+    background-color: rgb(53, 52, 52);
+    padding: 2em;
+}
+.mas-info{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.seccion-3{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+}
+.pilar-1{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 2em;
+}
+.pilar-2{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 2em;
+}
+.pilar-3{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 2em;
+}
+footer nav ul li a{
+    color: rgb(255, 255, 255);
+}
+#check{
+    display: none;
+  }
+  .checkbtn{
+    font-size: 25px;
+    color: red;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+@media (max-width: 768px) {
+    header{
+        background-color: rgb(43, 226, 156);
+    }
+    .acerca-de{
+        text-align: center;
+    }
+    .acerca-imagen{
+        margin-bottom: 40px;
+    }
+    h2.fuente-acento{
+        text-align: center;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #encabezado ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul{
+        display: block;
+        left: 0%;
+    }
+    #encabezado nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #encabezado nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ .checkbtn{
+        color: #2c3e50;
+    }
+  }
+  .redes{
+    display: flex;
+    text-align: center;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #5d6063;
+    background-color: #eaedf0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+  }
+    /* ------------- Encabezado Contacto ------------- */
+  
+    .encabezado-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .form-header {
+        text-align: center;
+        background-color: #f6f7f8;
+        border: 1px solid #d6d9dc;
+        border-radius: 3px;
+      
+        width: 50%;
+        margin: 10px auto;
+        padding: 20px;
+      }
+      
+      .form-header h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      
+      /* ------------- Formulario ------------- */
+      
+      .formulario {
+        background-color: #f6f7f8;
+        border: 1px solid #60666b;
+        border-radius: 3px;
+      
+        width: 80%;
+        padding: 50px;
+        margin: 30px 0 40px 0;
+      }
+      /* ------------- Campos del Formulario ------------- */
+    
+    .form-row {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      
+      .form-row input[type="text"] {
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+        width: 100%;
+        padding: 7px;
+        font-size: 14px;
+      }
+      
+      .form-row label {
+        margin-bottom: 3px;
+        text-align: initial;
+      }
+      /* ------------- Para Pantallas de más de 700px ------------- */
+    @media only screen and (min-width: 700px) {
+        .form-header {
+          padding: 50px;
+        }
+      
+        .form-row {
+          flex-direction: row;
+          align-items: flex-start;
+          margin-bottom: 20px;
+        }
+        .form-row input[type="text"] {
+          width: 250px;
+          height: initial;
+        }
+        .form-row label {
+          text-align: right;
+          width: 120px;
+          margin-top: 7px;
+          padding-right: 20px;
+        }
+      }
+      .form-row textarea {
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-size: 14px;
+      
+      
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+      
+      
+        min-height: 200px;
+        margin-bottom: 10px;
+        padding: 7px;
+        resize: none;
+      
+      
+        width: 100%;
+      }
+      /* ------------- Para Pantallas de más de 700px ------------- */
+      
+      
+      .form-row textarea {
+          width: 250px;
+        }
+        .form-row button {
+            font-size: 16px;
+            font-weight: bold;
+          
+          
+            color: #ffffff;
+            background-color: #7b59da;
+          
+          
+            border: none;
+            border-radius: 3px;
+          
+          
+            padding: 10px 40px;
+            cursor: pointer;
+          }
+          
+          
+          .form-row button:hover {
+            background-color: #76aeed;
+          }
+          
+          
+          .form-row button:active {
+            background-color: #407fc7;
+          }
+          
+          
+          /* ------------- Para Pantallas de más de 700px ------------- */
+          
+          
+          .form-row button {
+              margin-left: 120px;
+          }
+  
